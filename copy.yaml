@@ -4,7 +4,7 @@
   tasks:
    - name: copy
      copy: 
-       scr: /etc/passwd
+       src: /etc/passwd
        dest: /tmp/copy_passwd
 
 
