@@ -1,8 +1,14 @@
-all:
-  children:
-    host1:
+---
+all: # all servers
+  hosts: #ungroup
+  children: 
+    group1: #group name
       hosts:
-        68.183.62.78
-    host2:
+        hosts1: 
+          ansible_host: 10.108.0.3
+    group2:  #group name
       hosts:
-        159.203.94.34
+        hosts2: 
+          ansible_host: 10.108.0.4
+      
+  
